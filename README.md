@@ -1,0 +1,2 @@
+#Friends That Smash
+Friends that smash is a Super Smash Bros league finder. The goal is to help people that like to smash find others to smash with in their local area. You can create your own league and host your own internal tournaments.
