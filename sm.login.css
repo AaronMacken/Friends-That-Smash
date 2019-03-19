@@ -1,23 +1,35 @@
 html, body{
     height: 100%;
-}
-
-#cover {
+    width: 100%;
     background-image: url(https://i.imgur.com/vdjlzoY.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
-  
-  }
-
-#myCard{
-  filter: blur(0px);
-    -webkit-filter: blur(0px);
+    font-family: 'Quicksand', sans-serif;
 }
+
+#myContainer{
+  min-height: 100%;
+}
+
+#bgDiv{
+  background-color: rgba(0, 0, 0, 0.548);
+  text-align: center;
+}
+
+form label{
+  color: #fffffffb;
+  font-size: 2rem;
+  text-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+.btn-outline-secondary{
+  color: white;
+  border-color: white;
+}
+.btn-outline-secondary:hover{
+  background-color: rgb(231, 31, 31);
+  border-color: rgb(231, 31, 31);
+}
+
   
  

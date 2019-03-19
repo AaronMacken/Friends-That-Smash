@@ -17,6 +17,9 @@
     <!-- CSS Sheet -->
     <link rel="stylesheet" href="sm.login.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+
     <title>Friends Who!</title>
 </head>
 
@@ -40,21 +43,28 @@
         </div>
     </nav>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center" id="cover">
+    <div class="container d-flex justify-content-center align-items-center" id="myContainer">
+        <div class="row">
 
-        <!-- Test -->
-        
-            <div id="myCard" class="card bg-light" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div id="bgDiv" class="rounded">
+                <form class="bg-transparent text-light p-2">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </form>
             </div>
-       
 
+        </div>
     </div>
+
+
 
 
 
