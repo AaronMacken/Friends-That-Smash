@@ -1,11 +1,13 @@
 html, body{
-    height: 100%;
-    width: 100%;
+    
     background-image: url(https://i.imgur.com/vdjlzoY.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
     font-family: 'Quicksand', sans-serif;
+  
 }
 
 #myContainer{
@@ -31,5 +33,9 @@ form label{
   border-color: rgb(231, 31, 31);
 }
 
-  
- 
+@media(max-width: 600px){
+  body{
+    background-image: none;
+    background-color: pink;
+  }
+}
