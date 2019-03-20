@@ -28,9 +28,20 @@ form label{
   color: white;
   border-color: white;
 }
-.btn-outline-secondary:hover{
+/* .btn-outline-secondary:hover{
   background-color: rgb(231, 31, 31);
   border-color: rgb(231, 31, 31);
+}
+.btn .btn-outline-secondary:active{
+  background-color: rgb(231, 31, 31);
+  border-color: rgb(231, 31, 31);
+} */
+#myBtn{
+  background-color: rgb(231, 31, 31);
+  border-color: rgb(231, 31, 31);
+}
+#myBtn:hover{
+  -webkit-box-shadow: 0 0 10px #fff;
 }
 
 @media(max-width: 600px){
