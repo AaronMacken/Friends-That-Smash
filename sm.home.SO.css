@@ -1,3 +1,33 @@
-#navbar{
-    background: #030000;
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
 }
+.navbar{
+    background: rgb(141, 32, 32);
+}
+.navbar-brand, .nav-item a{
+    color: #fff;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    padding-top: 55px;
+    background: rgb(224, 50, 50);
+}
+.intro p{
+    color: #fff;
+}
+.how{
+    color:  rgb(141, 32, 32);
+    height: 500px;
+}
+.card-img-top{
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+}
+
+
