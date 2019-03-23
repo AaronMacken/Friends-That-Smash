@@ -22,12 +22,33 @@ html, body{
 }
 .how{
     color:  rgb(141, 32, 32);
-    height: 500px;
 }
 .card-img-top{
     height: 15vw;
     width: 100%;
     object-fit: cover;
 }
+.get-started{
+    background:  rgb(141, 32, 32);
+    height: 230px;
+    color: #fff;
+}
 
+.btn-outline-secondary{
+    color: white;
+    border-color: white;
+}
+#myBtn{
+    background-color: rgb(231, 31, 31);
+    border-color: rgb(231, 31, 31);
+  }
+  #myBtn:hover{
+      box-shadow: 0 0 10px #fff;;
+    -webkit-box-shadow: 0 0 10px #fff;
+  }
+  a:active,
+  a:focus { 
+      outline-style: none; 
+  }
+  
 
