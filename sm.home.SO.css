@@ -46,9 +46,5 @@ html, body{
       box-shadow: 0 0 10px #fff;;
     -webkit-box-shadow: 0 0 10px #fff;
   }
-  a:active,
-  a:focus { 
-      outline-style: none; 
-  }
   
 

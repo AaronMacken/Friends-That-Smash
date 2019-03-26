@@ -19,6 +19,10 @@ html, body{
   text-align: center;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff;
+}
+
 form label{
   color: #fffffffb;
   font-size: 2rem;
@@ -44,9 +48,18 @@ form label{
   -webkit-box-shadow: 0 0 10px #fff;
 }
 
-@media(max-width: 600px){
+@media screen and (max-height: 480px){
   body{
-    background-image: none;
-    background-color: pink;
+    height: 480px;
+  }
+  .navbar{
+    background: rgb(141, 32, 32);
+  }
+
+  
+}
+@media screen and (max-width: 300px){
+  body{
+    max-width: 300px;
   }
 }
