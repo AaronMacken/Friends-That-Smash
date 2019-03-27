@@ -1,50 +1,103 @@
-html, body{
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
-.navbar{
-    background: rgb(141, 32, 32);
+
+.bg-light {
+    background: rgb(141, 32, 32)!important;
 }
-.navbar-brand, .nav-item a{
+
+.navbar-dark .navbar-brand {
     color: #fff;
 }
 
-.intro{
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.intro {
     height: 100%;
     width: 100%;
     padding-top: 55px;
     background: rgb(224, 50, 50);
 }
-.intro p{
+
+.intro p {
     color: #fff;
 }
-.how{
-    color:  rgb(141, 32, 32);
+
+.how {
+    color: rgb(141, 32, 32);
 }
-.card-img-top{
+
+.card-img-top {
     height: 15vw;
     width: 100%;
     object-fit: cover;
 }
-.get-started{
-    background:  rgb(141, 32, 32);
+
+.get-started {
+    background: rgb(141, 32, 32);
     height: 230px;
     color: #fff;
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
     color: white;
     border-color: white;
 }
-#myBtn{
+
+#myBtn {
     background-color: rgb(231, 31, 31);
     border-color: rgb(231, 31, 31);
-  }
-  #myBtn:hover{
-      box-shadow: 0 0 10px #fff;;
-    -webkit-box-shadow: 0 0 10px #fff;
-  }
-  
+}
 
+#myBtn:hover {
+    box-shadow: 0 0 10px #fff;
+    ;
+    -webkit-box-shadow: 0 0 10px #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .display-2 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .display-2 {
+        font-size: 4rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card-img-top {
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0%;
+    }
+    #marioImg{
+        object-position: 0%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .display-2 {
+        font-size: 3rem;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        width: 350px;
+    }
+}

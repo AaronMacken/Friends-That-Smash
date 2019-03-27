@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="sm.home.SO.css">
+    <link rel="stylesheet" href="FTS.about.css">
 
     <title>Friends Who!</title>
 </head>
@@ -28,14 +28,14 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm  navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-light fixed-top">
         <a href="#" class="navbar-brand p-2">Friends Who <i class="fas fa-gavel"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Signup</a>
@@ -45,6 +45,21 @@
         </div>
     </nav>
 
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand p-2">Friends Who <i class="fas fa-gavel"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            </div>
+        </div>
+    </nav> -->
 
 
 
@@ -69,9 +84,9 @@
         <!-- First row -->
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-8 col-lg-6">
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-4 col-lg-6">
                     <p class="display-2">How it Works</p>
                 </div>
             </div>
@@ -83,12 +98,12 @@
         <div class="container pb-4">
             <div class="row">
                 <div class="col-12">
-                    <div class="card-deck">
+                    <div class="card-group">
                         <div class="card">
-                            <img src="mario.jpg" class="card-img-top">
+                            <img src="mario.jpg" class="card-img-top" id="marioImg">
                             <div class="card-body">
                                 <h5 class="card-title">Create Your Own League</h5>
-                                <p class="card-text">Friends That Smash allows you to create your own personal
+                                <p class="dicard-text">Friends That Smash allows you to create your own personal
                                     Super Smash Bros. league. Use the built in tools to manage a league for your
                                     friends, co-workers,
                                     or local members of your community!
@@ -130,11 +145,11 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
 
-                <div class="col-7">
+                <div class="col-12 col-s-7">
                     <p class="display-4">Start Smashing For Free</p>
                 </div>
-                <div class="col-2 d-flex align-items-center">
-                        <button type="submit" class="btn btn-outline-secondary btn-lg" id="myBtn">Sign Up</button>
+                <div class="col-12 col-s-2 d-flex align-items-center">
+                    <button type="submit" class="btn btn-outline-secondary btn-lg" id="myBtn">Sign Up</button>
                 </div>
 
             </div>
