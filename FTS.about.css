@@ -5,18 +5,22 @@ html, body {
     margin: 0;
 }
 
+/* Change bootstrap navbar color */
 .bg-light {
     background: rgb(141, 32, 32)!important;
 }
 
+/* Change bootstrap brand color */
 .navbar-dark .navbar-brand {
     color: #fff;
 }
 
+/* Change navbar item color */
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
 
+/* Landing Page CSS */
 .intro {
     height: 100%;
     width: 100%;
@@ -24,20 +28,24 @@ html, body {
     background: rgb(224, 50, 50);
 }
 
+
 .intro p {
     color: #fff;
 }
 
-.how {
+/* Second page text color */
+.how p{
     color: rgb(141, 32, 32);
 }
 
+/* Card image responsiveness styling */
 .card-img-top {
     height: 15vw;
     width: 100%;
     object-fit: cover;
 }
 
+/* Bottom Sign up portion styling */
 .get-started {
     background: rgb(141, 32, 32);
     height: 230px;
@@ -60,6 +68,7 @@ html, body {
     -webkit-box-shadow: 0 0 10px #fff;
 }
 
+/* Responsiveness styling */
 @media screen and (max-width: 1199px) {
     .display-2 {
         font-size: 4rem;
