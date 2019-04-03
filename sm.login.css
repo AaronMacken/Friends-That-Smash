@@ -10,44 +10,45 @@ html, body{
   
 }
 
+/* Set to 100% to let the content be centered with bootstrap */
 #myContainer{
   min-height: 100%;
 }
 
+/* Background tint */
 #bgDiv{
   background-color: rgba(0, 0, 0, 0.548);
   text-align: center;
 }
 
+/* Navbar text color */
 .navbar-dark .navbar-nav .nav-link{
   color: #fff;
 }
 
+/* typography for the form */
 form label{
   color: #fffffffb;
   font-size: 2rem;
   text-shadow: 10px 10px 15px rgb(0, 0, 0);
 }
-.btn-outline-secondary{
+
+
+/* Styles for the button */
+#myBtn{
   color: white;
   border-color: white;
-}
-/* .btn-outline-secondary:hover{
   background-color: rgb(231, 31, 31);
   border-color: rgb(231, 31, 31);
 }
-.btn .btn-outline-secondary:active{
-  background-color: rgb(231, 31, 31);
-  border-color: rgb(231, 31, 31);
-} */
-#myBtn{
-  background-color: rgb(231, 31, 31);
-  border-color: rgb(231, 31, 31);
-}
+
+/* Highlight button on hover */
 #myBtn:hover{
+  box-shadow: 0 0 10px #fff;;
   -webkit-box-shadow: 0 0 10px #fff;
 }
 
+/* Responsiveness */
 @media screen and (max-height: 480px){
   body{
     height: 480px;
