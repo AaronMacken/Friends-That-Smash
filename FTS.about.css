@@ -5,22 +5,32 @@ html, body {
     margin: 0;
 }
 
+h5 {
+    color: rgb(141, 32, 32);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 /* Change bootstrap navbar color */
+
 .bg-light {
     background: rgb(141, 32, 32)!important;
 }
 
 /* Change bootstrap brand color */
+
 .navbar-dark .navbar-brand {
     color: #fff;
 }
 
 /* Change navbar item color */
+
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
 
 /* Landing Page CSS */
+
 .intro {
     height: 100%;
     width: 100%;
@@ -28,17 +38,51 @@ html, body {
     background: rgb(224, 50, 50);
 }
 
-
 .intro p {
     color: #fff;
 }
 
 /* Second page text color */
-.how p{
+
+.card {
+    border: 1px solid rgb(141, 32, 32);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(141, 32, 32);
+    ;
+    -webkit-box-shadow: 0 0 20px rgb(141, 32, 32);
+}
+
+.how {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.infoDiv {
+    background: rgb(224, 50, 50);
+    height: 95%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: .95;
+    display: none;
+}
+
+
+.how p {
     color: rgb(141, 32, 32);
 }
 
 /* Card image responsiveness styling */
+
 .card-img-top {
     height: 15vw;
     width: 100%;
@@ -46,6 +90,7 @@ html, body {
 }
 
 /* Bottom Sign up portion styling */
+
 .get-started {
     background: rgb(141, 32, 32);
     height: 230px;
@@ -69,6 +114,7 @@ html, body {
 }
 
 /* Responsiveness styling */
+
 @media screen and (max-width: 1199px) {
     .display-2 {
         font-size: 4rem;
@@ -91,7 +137,7 @@ html, body {
         object-fit: cover;
         object-position: 0%;
     }
-    #marioImg{
+    #marioImg {
         object-position: 0%;
     }
 }
