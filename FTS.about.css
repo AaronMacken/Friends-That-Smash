@@ -4,6 +4,18 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,8 +76,6 @@ html, body {
 
 .how p {
     color: rgb(141, 32, 32);
-
-
 }
 /* Card Styling*/
 
@@ -82,7 +92,6 @@ html, body {
 .card:hover {
     box-shadow: 0 0 20px rgb(141, 32, 32);
     -webkit-box-shadow: 0 0 20px rgb(141, 32, 32);
-    
 }
 h5 {
     color: rgb(141, 32, 32);
@@ -93,9 +102,22 @@ h5 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* pop up div */
 .infoDiv {
-    color: white;
+    color: rgb(141, 32, 32);
     background-color: rgb(224, 50, 50);
     height: 95%;
     width: 50%;
@@ -106,16 +128,44 @@ h5 {
     bottom: 0;
     margin: auto;
     display: none;
-    
+    text-align: center;
+  
 }
+/* title */
 .divTitle{
     background-color: #fff;
-    border: 1rem solid rgb(224, 50, 50);
+    width: 96%;
+    height: 10%;
+    margin: 1rem auto 2rem auto;
 }
 .infoDiv h3{
     text-decoration: underline;
+    font-weight: 500;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* div Content */
+.divContent{
+    background: #fff;
+    height: 70%;
+    width: 25vw;
+    font-size: 1rem;
+    margin: auto;
+    
+    
+}
+.divContent p{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+
+/* effects */
 .fadeIn {
     animation: fadeIn 1s;
     animation-fill-mode: forwards;
