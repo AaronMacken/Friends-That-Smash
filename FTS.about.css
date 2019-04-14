@@ -5,14 +5,26 @@ html, body {
     margin: 0;
 }
 
-h5 {
-    color: rgb(141, 32, 32);
-    font-size: 1.25rem;
-    font-weight: 700;
+
+
+
+
+
+
+/* Landing Page */
+
+.intro {
+    height: 100%;
+    width: 100%;
+    padding-top: 55px;
+    background: rgb(224, 50, 50);
 }
 
-/* Change bootstrap navbar color */
+.intro p {
+    color: #fff;
+}
 
+/* navbar styling */
 .bg-light {
     background: rgb(141, 32, 32)!important;
 }
@@ -29,41 +41,62 @@ h5 {
     color: #fff;
 }
 
-/* Landing Page CSS */
 
-.intro {
-    height: 100%;
-    width: 100%;
-    padding-top: 55px;
-    background: rgb(224, 50, 50);
-}
 
-.intro p {
-    color: #fff;
-}
 
-/* Second page text color */
 
-.card {
-    border: 1px solid rgb(141, 32, 32);
-    text-align: center;
-    cursor: pointer;
-}
 
-.card:hover {
-    box-shadow: 0 0 20px rgb(141, 32, 32);
-    ;
-    -webkit-box-shadow: 0 0 20px rgb(141, 32, 32);
-}
 
+
+
+
+
+
+
+
+
+/* Mid section */
 .how {
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
+.how p {
+    color: rgb(141, 32, 32);
+
+
+}
+/* Card Styling*/
+
+.card {
+    border: 1px solid rgb(141, 32, 32);
+    text-align: center;
+    cursor: pointer;
+}
+.card-img-top {
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgb(141, 32, 32);
+    -webkit-box-shadow: 0 0 20px rgb(141, 32, 32);
+    
+}
+h5 {
+    color: rgb(141, 32, 32);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+
+
+/* pop up div */
 .infoDiv {
-    background: rgb(224, 50, 50);
+    color: white;
+    background-color: rgb(224, 50, 50);
     height: 95%;
     width: 50%;
     position: absolute;
@@ -72,24 +105,41 @@ h5 {
     right: 0;
     bottom: 0;
     margin: auto;
-    opacity: .95;
     display: none;
+    
+}
+.divTitle{
+    background-color: #fff;
+    border: 1rem solid rgb(224, 50, 50);
+}
+.infoDiv h3{
+    text-decoration: underline;
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: .95;}
 }
 
 
-.how p {
-    color: rgb(141, 32, 32);
-}
 
-/* Card image responsiveness styling */
 
-.card-img-top {
-    height: 15vw;
-    width: 100%;
-    object-fit: cover;
-}
 
-/* Bottom Sign up portion styling */
+
+
+
+
+
+
+
+
+
+/* Footer Section */
 
 .get-started {
     background: rgb(141, 32, 32);
@@ -112,6 +162,22 @@ h5 {
     ;
     -webkit-box-shadow: 0 0 10px #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsiveness styling */
 
