@@ -2,12 +2,22 @@ var cards = document.querySelectorAll(".card");
 var infoDiv1 = document.querySelector("#div1");
 var infoDiv2 = document.querySelector("#div2");
 var infoDiv3 = document.querySelector("#div3");
-
+var arrow = document.querySelector("#arrow");
+var how = document.querySelector(".how");
 
 var c1 = document.querySelector("#c1");
 var c2 = document.querySelector("#c2");
 var c3 = document.querySelector("#c3");
 
+// Scroll Arrow
+arrow.addEventListener("click", function(){
+    how.scrollIntoView();
+});
+
+
+
+
+// Card Click Events
 
 c1.addEventListener("click", function(){
     infoDiv1.style.display = "inline-block";
@@ -22,12 +32,12 @@ c3.addEventListener("click", function(){
 });
 
 
+// Hide Div Function
 function hideInfoDiv() {
     infoDiv1.style.display = "none";
     infoDiv2.style.display = "none";
     infoDiv3.style.display = "none";
 }
-
 
 
 // Hide info Div if clicked outside of
@@ -37,3 +47,5 @@ window.addEventListener("mouseup", function (event) {
         hideInfoDiv();
     }
 });
+
+

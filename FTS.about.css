@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
@@ -11,7 +12,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* navbar styling */
+.bg-light {
+    background: rgb(141, 32, 32)!important;
+}
 
+/* Change bootstrap brand color */
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+/* Change navbar item color */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
 
 
 
@@ -30,28 +46,41 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-top: 55px;
     background: rgb(224, 50, 50);
+    position: relative;
 }
 
 .intro p {
     color: #fff;
 }
 
-/* navbar styling */
-.bg-light {
-    background: rgb(141, 32, 32)!important;
-}
-
-/* Change bootstrap brand color */
-
-.navbar-dark .navbar-brand {
+#arrow{
+    font-size: 2rem;
     color: #fff;
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    margin: 0;
+    text-shadow: 0 0 10px #fff;
+    -webkit-text-shadow: 0 0 10px #fff;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
+/* moving animation */
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+    0% {bottom: .1vh}
+    50% {bottom: 5vh}
+    100% {bottom: .1vh;}
+  }
+  
+  /* Standard syntax */
+  @keyframes bounce {
+    0% {bottom: .1vh}
+    50% {bottom: 5vh}
+    100% {bottom: .1vh;}
+  }
 
-/* Change navbar item color */
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-}
 
 
 
@@ -129,6 +158,7 @@ h5 {
     margin: auto;
     display: none;
     text-align: center;
+    min-height: 400px;
   
 }
 /* title */
@@ -153,6 +183,9 @@ h5 {
     width: 25vw;
     font-size: 1rem;
     margin: auto;
+    overflow: auto;
+    min-height: 250px;
+    padding-bottom: 0;
     
     
 }
@@ -256,14 +289,24 @@ h5 {
     #marioImg {
         object-position: 0%;
     }
+    .infoDiv{
+    height: 70vh;
+    width: 60%;
+    }
+    .divContent{
+        width: 75%
+    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 485px) {
     .display-2 {
         font-size: 3rem;
     }
     .display-4 {
         font-size: 2rem;
+    }
+    .divTitle h3{
+        font-size: 1rem;
     }
 }
 
