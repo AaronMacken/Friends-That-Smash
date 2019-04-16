@@ -1,9 +1,11 @@
 var cards = document.querySelectorAll(".card");
-var infoDiv1 = document.querySelector("#div1");
-var infoDiv2 = document.querySelector("#div2");
-var infoDiv3 = document.querySelector("#div3");
 var arrow = document.querySelector("#arrow");
 var how = document.querySelector(".how");
+
+var div0 = document.querySelector("#div0");
+var divT = document.querySelector("#title");
+var divC = document.querySelector("#content");
+
 
 var c1 = document.querySelector("#c1");
 var c2 = document.querySelector("#c2");
@@ -16,35 +18,34 @@ arrow.addEventListener("click", function(){
 
 
 
-
 // Card Click Events
 
 c1.addEventListener("click", function(){
-    infoDiv1.style.display = "inline-block";
+    divT.textContent = "Create your own League";
+    divC.textContent = "Friends That Smash allows you to create your own personal Super Smash Bros league. Use the built in tools to manage a league for your friends, co-workers, local members of your community!"
+    div0.style.display = "inline-block";
 });
 
 c2.addEventListener("click", function(){
-    infoDiv2.style.display = "inline-block";
+    divT.textContent = "Recruit Friends";
+    divC.textContent = "Don't have anyone to smash with? Use the Smash Finder to find people to smash with! Recruit people to your league or challenge other leagues for an all out battle royale!"
+    div0.style.display = "inline-block";
 });
 
 c3.addEventListener("click", function(){
-    infoDiv3.style.display = "inline-block";
+    divT.textContent = "Organize a Tournament";
+    divC.textContent = "Host and create your own internal tournaments! Automatically generate a battle roster & schedule matches or manually create the tournament yourself. Who will take home the gold?! Wombo Combo!"
+    div0.style.display = "inline-block";
 });
 
 
-// Hide Div Function
-function hideInfoDiv() {
-    infoDiv1.style.display = "none";
-    infoDiv2.style.display = "none";
-    infoDiv3.style.display = "none";
-}
 
 
 // Hide info Div if clicked outside of
 // && event.target.parentNode != box (to prevent box from being closed when user interacts with it)
 window.addEventListener("mouseup", function (event) {
-    if (event.target != infoDiv1 && event.target != infoDiv2 && event.target != infoDiv3) {
-        hideInfoDiv();
+    if (event.target != div0) {
+        div0.style.display = "none"
     }
 });
 
