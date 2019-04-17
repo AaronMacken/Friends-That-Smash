@@ -53,16 +53,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-#arrow{
+
+/* Arrows */
+.arrow{
+    font-size: 2rem;
+    color: #fff !important;
+    cursor: pointer;
+    -webkit-text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px #fff;
+}
+#arrowLeft{
+    position: absolute;
+    top: 50%;
+    right: 95.5%;
+}
+#arrowRight{
+    position: absolute;
+    top: 50%;
+    left: 95.5%;
+}
+
+#arrowDown{
     font-size: 2rem;
     color: #fff;
-    display: inline;
     position: absolute;
-    cursor: pointer;
     left: 50%;
     margin: 0;
-    text-shadow: 0 0 10px #fff;
     -webkit-text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px #fff;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
 }
@@ -156,7 +174,7 @@ h5 {
     right: 0;
     bottom: 0;
     margin: auto;
-    display: none;
+    visibility: hidden;
     text-align: center;
     min-height: 400px;
   
@@ -200,14 +218,29 @@ h5 {
 
 /* effects */
 .fadeIn {
-    animation: fadeIn 1s;
+    animation: fadeIn .5s;
+    animation-fill-mode: forwards;
+}
+.fadeOut {
+    animation: fadeOut .3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn{
-    0% {opacity: 0;}
-    100% {opacity: .95;}
+    0% {opacity: .0;
+        visibility: hidden;}
+    100% {opacity: .95;
+        visibility: visible;}
 }
+@keyframes fadeOut{
+    0% {opacity: .95;
+        visibility: visible;}
+    100% {opacity: 0;
+        visibility: hidden;}
+
+}
+
+
 
 
 
@@ -238,6 +271,8 @@ h5 {
 #myBtn {
     background-color: rgb(231, 31, 31);
     border-color: rgb(231, 31, 31);
+    opacity: 1;
+    visibility: visible;
 }
 
 #myBtn:hover {
