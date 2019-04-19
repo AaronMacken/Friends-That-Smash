@@ -10,8 +10,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 /* navbar styling */
 .bg-light {
     background: rgb(141, 32, 32)!important;
@@ -34,11 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
-
-
 /* Landing Page */
 
 .intro {
@@ -52,61 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 .intro p {
     color: #fff;
 }
-
-
-/* Arrows */
-.arrow{
-    font-size: 2rem;
-    color: #fff !important;
-    cursor: pointer;
-    -webkit-text-shadow: 0 0 10px #fff;
-    text-shadow: 0 0 10px #fff;
-}
-#arrowLeft{
-    position: absolute;
-    top: 50%;
-    right: 95.5%;
-}
-#arrowRight{
-    position: absolute;
-    top: 50%;
-    left: 95.5%;
-}
-
-#arrowDown{
-    font-size: 2rem;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    margin: 0;
-    -webkit-text-shadow: 0 0 10px #fff;
-    text-shadow: 0 0 10px #fff;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-}
-/* moving animation */
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes bounce {
-    0% {bottom: .1vh}
-    50% {bottom: 5vh}
-    100% {bottom: .1vh;}
-  }
-  
-  /* Standard syntax */
-  @keyframes bounce {
-    0% {bottom: .1vh}
-    50% {bottom: 5vh}
-    100% {bottom: .1vh;}
-  }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -150,8 +88,52 @@ h5 {
 
 
 
+/* Arrows */
+.arrow{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    -webkit-text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px #fff;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    right: 95.5%;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    left: 95.5%;
+}
+#farLeftArrow{
+    color: rgba(216, 215, 215, 0.53);
+}
 
-
+#arrowDown{
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    -webkit-text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px #fff;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+/* moving animation */
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+    0% {bottom: .1vh}
+    50% {bottom: 5vh}
+    100% {bottom: .1vh;}
+  }
+  
+  /* Standard syntax */
+  @keyframes bounce {
+    0% {bottom: .1vh}
+    50% {bottom: 5vh}
+    100% {bottom: .1vh;}
+  }
 
 
 
@@ -177,6 +159,7 @@ h5 {
     visibility: hidden;
     text-align: center;
     min-height: 400px;
+    border: 2px solid black;
   
 }
 /* title */
@@ -204,8 +187,6 @@ h5 {
     overflow: auto;
     min-height: 250px;
     padding-bottom: 0;
-    
-    
 }
 .divContent p{
     margin-top: 0;
@@ -218,11 +199,11 @@ h5 {
 
 /* effects */
 .fadeIn {
-    animation: fadeIn .5s;
+    animation: fadeIn 1s;
     animation-fill-mode: forwards;
 }
 .fadeOut {
-    animation: fadeOut .3s;
+    animation: fadeOut 1s;
     animation-fill-mode: forwards;
 }
 
@@ -277,7 +258,6 @@ h5 {
 
 #myBtn:hover {
     box-shadow: 0 0 10px #fff;
-    ;
     -webkit-box-shadow: 0 0 10px #fff;
 }
 

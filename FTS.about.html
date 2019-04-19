@@ -54,16 +54,16 @@
 
     <!-- Landing page section-->
     <section class="intro d-flex align-items-center">
-            <p class= "arrow" id="arrowDown"><i class="fas fa-chevron-down"></i></p>
+        <p id="arrowDown"><i class="fas fa-chevron-down arrow"></i></p>
         <div class="container">
             <div class="row">
                 <div class="col-8">
                     <p class="display-2 ">Friends That Smash</p>
                 </div>
-            </div> 
+            </div>
         </div>
 
-       
+
 
     </section>
 
@@ -91,25 +91,23 @@
                     <div class="card-group">
 
                         <!-- Card 1 -->
-                        <div id="c1" class="card">
+                        <div class="card" onclick="currentSlide(1)">
                             <img src="mario.jpg" class="card-img-top" id="marioImg">
                             <div class="card-body">
                                 <h5 class="card-title">Create Your Own League</h5>
-
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div id="c2" class="card">
+                        <div class="card" onclick="currentSlide(2)">
                             <img src="gmaps.png" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Recruit Friends</h5>
-
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div id="c3" class="card">
+                        <div class="card" onclick="currentSlide(3)">
                             <img src="fatGuy.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Organize a Tournament</h5>
@@ -124,29 +122,63 @@
 
 
         <!-- pop up divs -->
-        <div id="div0" class="infoDiv rounded">
 
+
+        <!-- div 1 -->
+        <div class="infoDiv rounded">
+            <p class="next" onclick="changeSlides(1)"><i class="fas fa-chevron-right arrow"></i></p>
             <div class="divTitle rounded">
-                <h3 id="title">
-                </h3>
+                <h3 id="title">Create your own League</h3>
             </div>
-
-            <p class="arrow" id="arrowLeft">
-                <i class="fas fa-chevron-left"></i>
-            </p>
-
             <div class="divContent rounded">
                 <p id="content">
+                    Friends That Smash allows you to create your own personal Super Smash Bros league. Use the built
+                    in
+                    tools to manage a league for your friends, co-workers, local members of your community!
                 </p>
             </div>
-            <p class="arrow" id="arrowRight">
-                <i class="fas fa-chevron-right"></i>
-            </p>
-            
-
         </div>
-    
+
+        <!-- div 2 -->
+        <div class="infoDiv rounded">
+            <p class="prev" onclick="changeSlides(-1)"><i class="fas fa-chevron-left arrow"></i></p>
+            <p class="next" onclick="changeSlides(1)"><i class="fas fa-chevron-right arrow"></i></p>
+            <div class="divTitle rounded">
+                <h3 id="title">Recruit Friends</h3>
+            </div>
+            <div class="divContent rounded">
+                <p id="content">
+                    Don't have anyone to smash with? Use the Smash Finder to find people to smash with! Recruit
+                    people
+                    to your league or challenge other leagues for an all out battle royale!
+                </p>
+            </div>
+        </div>
+
+        <!-- div 3 -->
+        <div class="infoDiv rounded">
+            <p class="prev" onclick="changeSlides(-1)"><i class="fas fa-chevron-left arrow"></i></p>
+            <div class="divTitle rounded">
+                <h3 id="title">Organize a Tournament</h3>
+            </div>
+            <div class="divContent rounded">
+                <p id="content">
+                    Host and create your own internal tournaments! Automatically generate a battle
+                    roster & schedule matches or manually create the tournament yourself. Who will take home the
+                    gold?!
+                    Wombo Combo!
+                </p>
+            </div>
+        </div>
+
+
+
     </section>
+
+
+
+
+
 
 
 
